@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-labelledby="lfl-title lfl-desc">
+  <title id="lfl-title">Likhith Sai Padige — Linux, cloud and automation</title>
+  <desc id="lfl-desc">Light footer that fades into the page, with a fine grid, a small orbital mark and the words Linux, Cloud, Automation.</desc>
+  <defs>
+    <linearGradient id="lfl-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C2561F" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#C2561F" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#C2561F" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lfl-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F3B37A" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#E8823D" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="lfl-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#2A211C" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <!-- Grid fades out toward every edge so the band melts into the page. -->
+    <radialGradient id="lfl-fade" cx="600" cy="60" r="600" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 60) scale(1 0.1) translate(-600 -60)">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.6" stop-color="#fff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="lfl-grid-mask">
+      <rect width="1200" height="120" fill="url(#lfl-fade)"/>
+    </mask>
+    <path id="lfl-route" d="M120 60 H520 M680 60 H1080"/>
+  </defs>
+  <style>
+    .lfl-orbit { transform-origin: 600px 60px; animation: lfl-spin 40s linear infinite; }
+    .lfl-flow { stroke-dasharray: 4 12; animation: lfl-dash 5s linear infinite; }
+    @keyframes lfl-spin { to { transform: rotate(360deg); } }
+    @keyframes lfl-dash { to { stroke-dashoffset: -160; } }
+    @media (prefers-reduced-motion: reduce) { .lfl-orbit, .lfl-flow { animation: none; } }
+  </style>
+  <rect width="1200" height="120" fill="url(#lfl-grid)" mask="url(#lfl-grid-mask)"/>
+  <rect x="120" y="59" width="400" height="1.5" fill="url(#lfl-line)"/>
+  <rect x="680" y="59" width="400" height="1.5" fill="url(#lfl-line)"/>
+  <use href="#lfl-route" fill="none" stroke="#C2561F" stroke-opacity="0.35" stroke-width="1" class="lfl-flow"/>
+  <g fill="none" stroke-linecap="round">
+    <circle cx="600" cy="60" r="26" fill="url(#lfl-glow)" stroke="none" opacity="0.5"/>
+    <g class="lfl-orbit">
+      <ellipse cx="600" cy="60" rx="44" ry="16" stroke="#C2561F" stroke-opacity="0.5" transform="rotate(-24 600 60)"/>
+      <circle cx="640" cy="44" r="2.5" fill="#E8823D" stroke="none"/>
+    </g>
+    <rect x="593" y="53" width="14" height="14" rx="2" fill="#FFFFFF" stroke="#C2561F" transform="rotate(45 600 60)"/>
+  </g>
+  <text x="600" y="104" text-anchor="middle" fill="#7A6A5E" font-family="'SF Mono', 'Cascadia Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12" letter-spacing="3">LINUX · CLOUD · AUTOMATION</text>
+</svg>

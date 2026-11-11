@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="lhl-title lhl-desc">
+  <title id="lhl-title">Likhith Sai Padige — Linux &amp; Cloud Infrastructure Engineer</title>
+  <desc id="lhl-desc">Light editorial banner that fades into the page, with a fine technical grid, a flowing circuit path, a slowly turning orbital mark and a glowing underline beneath the name.</desc>
+  <defs>
+    <radialGradient id="lhl-ember" cx="960" cy="200" r="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8823D" stop-opacity="0.16"/>
+      <stop offset="0.55" stop-color="#F3B37A" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lhl-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F3B37A" stop-opacity="0.85"/>
+      <stop offset="0.35" stop-color="#E8823D" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#E8823D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lhl-underline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C2561F" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#E8823D" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#F3B37A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lhl-sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="lhl-grid-fine" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#2A211C" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="lhl-grid-major" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M120 0H0V120" fill="none" stroke="#2A211C" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <!-- Grid fades out toward every edge so the banner melts into the page. -->
+    <radialGradient id="lhl-fade" cx="600" cy="200" r="600" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 200) scale(1 0.34) translate(-600 -200)">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="lhl-grid-mask">
+      <rect width="1200" height="400" fill="url(#lhl-fade)"/>
+    </mask>
+    <linearGradient id="lhl-route-fade" x1="0" y1="0" x2="884" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="lhl-route-mask">
+      <rect width="1200" height="400" fill="url(#lhl-route-fade)"/>
+    </mask>
+    <filter id="lhl-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <path id="lhl-route" d="M0 356 H196 L226 326 H596 L626 302 H812 L842 272 H884"/>
+  </defs>
+
+  <style>
+    .lhl-flow { stroke-dasharray: 6 14; animation: lhl-dash 6s linear infinite; }
+    .lhl-orbit { transform-origin: 960px 200px; animation: lhl-spin 60s linear infinite; }
+    .lhl-orbit-rev { transform-origin: 960px 200px; animation: lhl-spin 90s linear infinite reverse; }
+    .lhl-sheen { animation: lhl-sweep 7s ease-in-out infinite; }
+    .lhl-pulse { animation: lhl-breathe 5s ease-in-out infinite; }
+    @keyframes lhl-dash { to { stroke-dashoffset: -200; } }
+    @keyframes lhl-spin { to { transform: rotate(360deg); } }
+    @keyframes lhl-sweep { 0% { transform: translateX(-140px); opacity: 0; } 25% { opacity: 1; } 60% { opacity: 1; } 100% { transform: translateX(460px); opacity: 0; } }
+    @keyframes lhl-breathe { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .lhl-flow, .lhl-orbit, .lhl-orbit-rev, .lhl-sheen, .lhl-pulse { animation: none; }
+      .lhl-sheen { opacity: 0; }
+      /* SMIL motion ignores CSS; hide the travelling light instead. */
+      .lhl-traveller { display: none; }
+    }
+  </style>
+
+  <!-- No panel or border: transparent background so the banner sits on the page itself. -->
+  <rect width="1200" height="400" fill="url(#lhl-ember)"/>
+  <g mask="url(#lhl-grid-mask)">
+    <rect width="1200" height="400" fill="url(#lhl-grid-fine)"/>
+    <rect width="1200" height="400" fill="url(#lhl-grid-major)"/>
+  </g>
+
+  <!-- Orbital mark -->
+  <g fill="none" stroke-linecap="round">
+    <circle cx="960" cy="200" r="132" stroke="#2A211C" stroke-opacity="0.08"/>
+    <g class="lhl-orbit">
+      <ellipse cx="960" cy="200" rx="150" ry="58" stroke="#C2561F" stroke-opacity="0.45" transform="rotate(-24 960 200)"/>
+      <circle cx="1096" cy="140" r="4" fill="#E8823D" stroke="none"/>
+    </g>
+    <g class="lhl-orbit-rev">
+      <ellipse cx="960" cy="200" rx="118" ry="118" stroke="#2A211C" stroke-opacity="0.18" stroke-dasharray="2 9"/>
+      <circle cx="960" cy="82" r="3" fill="#7A6A5E" fill-opacity="0.8" stroke="none"/>
+    </g>
+    <ellipse cx="960" cy="200" rx="92" ry="34" stroke="#B04A3A" stroke-opacity="0.45" transform="rotate(32 960 200)"/>
+    <circle cx="960" cy="200" r="46" fill="url(#lhl-glow)" stroke="none" class="lhl-pulse"/>
+    <rect x="949" y="189" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#C2561F" stroke-opacity="0.9" transform="rotate(45 960 200)"/>
+    <path d="M960 160 V176 M960 224 V240 M920 200 H936 M984 200 H1000" stroke="#2A211C" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- Technical path -->
+  <g mask="url(#lhl-route-mask)">
+    <use href="#lhl-route" fill="none" stroke="#F1E2D4" stroke-width="3"/>
+    <use href="#lhl-route" fill="none" stroke="#C2561F" stroke-opacity="0.75" stroke-width="1.5" class="lhl-flow"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#C2561F" stroke-opacity="0.85" stroke-width="1.5">
+    <circle cx="196" cy="356" r="4"/>
+    <circle cx="596" cy="326" r="4"/>
+    <circle cx="812" cy="302" r="4"/>
+    <circle cx="884" cy="272" r="4"/>
+  </g>
+  <circle r="12" fill="url(#lhl-glow)" filter="url(#lhl-blur)" class="lhl-traveller" opacity="0">
+    <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#lhl-route"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#C2561F" class="lhl-traveller" opacity="0">
+    <animateMotion dur="9s" repeatCount="indefinite"><mpath href="#lhl-route"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Registration ticks -->
+  <g stroke="#2A211C" stroke-opacity="0.2" stroke-width="1">
+    <path d="M40 40 H58 M40 40 V58"/>
+    <path d="M1160 40 H1142 M1160 40 V58"/>
+    <path d="M40 360 H58 M40 360 V342"/>
+    <path d="M1160 360 H1142 M1160 360 V342"/>
+  </g>
+
+  <!-- Type -->
+  <text x="80" y="104" fill="#7A6A5E" font-family="'SF Mono', 'Cascadia Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" letter-spacing="3">PROFILE · INFRASTRUCTURE</text>
+  <text x="78" y="172" fill="#1F1A17" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'DejaVu Serif', serif" font-size="62" font-weight="600" letter-spacing="0.5">Likhith Sai Padige</text>
+  <rect x="80" y="190" width="420" height="2.5" rx="1.25" fill="url(#lhl-underline)"/>
+  <rect x="80" y="186" width="420" height="10" rx="5" fill="url(#lhl-underline)" opacity="0.25" filter="url(#lhl-blur)"/>
+  <rect x="80" y="190" width="120" height="2.5" rx="1.25" fill="url(#lhl-sheen)" class="lhl-sheen" opacity="0"/>
+  <text x="80" y="232" fill="#B04A17" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="4.5">LINUX &amp; CLOUD INFRASTRUCTURE ENGINEER</text>
+  <text x="80" y="270" fill="#5A4D45" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18">Reliable Linux systems · Cloud operations · Infrastructure automation</text>
+</svg>

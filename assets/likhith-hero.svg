@@ -51,17 +51,15 @@
   </defs>
 
   <style>
-    .lh-flow { stroke-dasharray: 6 14; animation: lh-dash 4.5s linear 1; }
-    .lh-orbit { transform-origin: 960px 200px; animation: lh-settle 4.5s ease-out 1; }
-    .lh-orbit-rev { transform-origin: 960px 200px; animation: lh-settle-rev 4.5s ease-out 1; }
-    .lh-sheen { animation: lh-sweep 4.5s ease-in-out 1; }
-    .lh-pulse { animation: lh-breathe 4.5s ease-in-out 1; }
+    .lh-flow { stroke-dasharray: 6 14; animation: lh-dash 6s linear infinite; }
+    .lh-orbit { transform-origin: 960px 200px; animation: lh-spin 60s linear infinite; }
+    .lh-orbit-rev { transform-origin: 960px 200px; animation: lh-spin 90s linear infinite reverse; }
+    .lh-sheen { animation: lh-sweep 7s ease-in-out infinite; }
+    .lh-pulse { animation: lh-breathe 5s ease-in-out infinite; }
     @keyframes lh-dash { to { stroke-dashoffset: -200; } }
-    /* Every animation plays once (4.5 s) and ends on the static frame. */
-    @keyframes lh-settle { from { transform: rotate(-40deg); } to { transform: rotate(0deg); } }
-    @keyframes lh-settle-rev { from { transform: rotate(30deg); } to { transform: rotate(0deg); } }
+    @keyframes lh-spin { to { transform: rotate(360deg); } }
     @keyframes lh-sweep { 0% { transform: translateX(-140px); opacity: 0; } 25% { opacity: 1; } 60% { opacity: 1; } 100% { transform: translateX(460px); opacity: 0; } }
-    @keyframes lh-breathe { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+    @keyframes lh-breathe { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) {
       .lh-flow, .lh-orbit, .lh-orbit-rev, .lh-sheen, .lh-pulse { animation: none; }
       .lh-sheen { opacity: 0; }
@@ -105,12 +103,12 @@
       <circle cx="884" cy="272" r="4"/>
     </g>
     <circle r="12" fill="url(#lh-glow)" filter="url(#lh-blur)" class="lh-traveller" opacity="0">
-      <animateMotion dur="4.5s" repeatCount="1" fill="freeze" rotate="auto"><mpath href="#lh-route"/></animateMotion>
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="4.5s" repeatCount="1" fill="freeze"/>
+      <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#lh-route"/></animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="9s" repeatCount="indefinite"/>
     </circle>
     <circle r="2.5" fill="#FFE7CF" class="lh-traveller" opacity="0">
-      <animateMotion dur="4.5s" repeatCount="1" fill="freeze"><mpath href="#lh-route"/></animateMotion>
-      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="4.5s" repeatCount="1" fill="freeze"/>
+      <animateMotion dur="9s" repeatCount="indefinite"><mpath href="#lh-route"/></animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="9s" repeatCount="indefinite"/>
     </circle>
 
     <!-- Registration ticks -->

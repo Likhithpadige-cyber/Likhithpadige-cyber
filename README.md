@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./assets/likhith-hero.svg" width="100%" alt="Likhith Sai Padige — Linux &amp; Cloud Infrastructure Engineer">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Likhithpadige-cyber/Likhithpadige-cyber/main/assets/likhith-hero.svg">
+    <img src="./assets/likhith-hero-light.svg" width="100%" alt="Likhith Sai Padige — Linux &amp; Cloud Infrastructure Engineer">
+  </picture>
 </p>
 
 <p align="center">
@@ -95,24 +98,35 @@ React · Docker · GitHub Actions
 ### ◆ Education and recognition
 
 - M.S. in Information Technology Management — Belhaven University
-- B.Tech in Computer Science and Engineering — JNTUH College of Engineering, Hyderabad
-- AWS Academy Graduate — Cloud Foundations (course completion badge)
+- AWS Academy Graduate — Cloud Foundations
 - President's List — Belhaven University, Fall 2025
 
 ### ◆ GitHub activity
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=likhithpadige-cyber&show_icons=true&hide_rank=true&disable_animations=true&bg_color=0E0B10&title_color=E8823D&text_color=EDE3D4&icon_color=C9665A&border_color=3A1A24" height="165" alt="GitHub statistics for Likhithpadige-cyber">
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=likhithpadige-cyber&layout=compact&disable_animations=true&bg_color=0E0B10&title_color=E8823D&text_color=EDE3D4&border_color=3A1A24" height="165" alt="Most used languages">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=likhithpadige-cyber&show_icons=true&hide_rank=true&disable_animations=true&bg_color=0E0B10&title_color=E8823D&text_color=EDE3D4&icon_color=C9665A&border_color=3A1A24">
+    <img src="https://github-readme-stats.shion.dev/api?username=likhithpadige-cyber&show_icons=true&hide_rank=true&disable_animations=true&bg_color=FFFFFF&title_color=B04A17&text_color=2A211C&icon_color=B04A3A&border_color=EADFD4" height="165" alt="GitHub statistics for Likhithpadige-cyber">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api/top-langs/?username=likhithpadige-cyber&layout=compact&disable_animations=true&bg_color=0E0B10&title_color=E8823D&text_color=EDE3D4&border_color=3A1A24">
+    <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=likhithpadige-cyber&layout=compact&disable_animations=true&bg_color=FFFFFF&title_color=B04A17&text_color=2A211C&border_color=EADFD4" height="165" alt="Most used languages">
+  </picture>
 </p>
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=likhithpadige-cyber&disable_animations=true&background=0E0B10&border=3A1A24&ring=E8823D&fire=E8823D&currStreakNum=EDE3D4&sideNums=EDE3D4&currStreakLabel=E8823D&sideLabels=C9B9A6&dates=8C7F72&stroke=3A1A24" width="495" alt="GitHub contribution streak">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=likhithpadige-cyber&disable_animations=true&background=0E0B10&border=3A1A24&ring=E8823D&fire=E8823D&currStreakNum=EDE3D4&sideNums=EDE3D4&currStreakLabel=E8823D&sideLabels=C9B9A6&dates=8C7F72&stroke=3A1A24">
+    <img src="https://streak-stats.demolab.com/?user=likhithpadige-cyber&disable_animations=true&background=FFFFFF&border=EADFD4&ring=E8823D&fire=E8823D&currStreakNum=2A211C&sideNums=2A211C&currStreakLabel=B04A17&sideLabels=5A4D45&dates=7A6A5E&stroke=EADFD4" width="495" alt="GitHub contribution streak">
+  </picture>
 </p>
 
 <p align="center"><sub>Live third-party cards · public activity only</sub></p>
 
 <p align="center">
-  <img src="./assets/likhith-footer.svg" width="100%" alt="Linux · Cloud · Automation">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Likhithpadige-cyber/Likhithpadige-cyber/main/assets/likhith-footer.svg">
+    <img src="./assets/likhith-footer-light.svg" width="100%" alt="Linux · Cloud · Automation">
+  </picture>
 </p>
 
 <p align="center">
