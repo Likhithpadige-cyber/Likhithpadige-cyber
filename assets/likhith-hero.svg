@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="lh-title lh-desc">
+  <title id="lh-title">Likhith Sai Padige — Linux &amp; Cloud Infrastructure Engineer</title>
+  <desc id="lh-desc">Dark editorial banner with a fine technical grid, a flowing circuit path, a slowly turning orbital mark and a glowing underline beneath the name.</desc>
+  <defs>
+    <linearGradient id="lh-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0A0D"/>
+      <stop offset="0.55" stop-color="#120D13"/>
+      <stop offset="1" stop-color="#2B0E19"/>
+    </linearGradient>
+    <radialGradient id="lh-ember" cx="0.82" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#7A2234" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#3A1220" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#0B0A0D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lh-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F3B37A" stop-opacity="0.9"/>
+      <stop offset="0.35" stop-color="#E8823D" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#E8823D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lh-underline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8823D" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#C9665A" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7A2234" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lh-sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFE7CF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFE7CF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFE7CF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="lh-grid-fine" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#EDE3D4" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <pattern id="lh-grid-major" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M120 0H0V120" fill="none" stroke="#EDE3D4" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="lh-fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.15"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="lh-grid-mask">
+      <rect width="1200" height="400" fill="url(#lh-fade)"/>
+    </mask>
+    <filter id="lh-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="lh-frame">
+      <rect width="1200" height="400" rx="18"/>
+    </clipPath>
+    <path id="lh-route" d="M0 356 H196 L226 326 H596 L626 302 H812 L842 272 H884"/>
+  </defs>
+
+  <style>
+    .lh-flow { stroke-dasharray: 6 14; animation: lh-dash 4.5s linear 1; }
+    .lh-orbit { transform-origin: 960px 200px; animation: lh-settle 4.5s ease-out 1; }
+    .lh-orbit-rev { transform-origin: 960px 200px; animation: lh-settle-rev 4.5s ease-out 1; }
+    .lh-sheen { animation: lh-sweep 4.5s ease-in-out 1; }
+    .lh-pulse { animation: lh-breathe 4.5s ease-in-out 1; }
+    @keyframes lh-dash { to { stroke-dashoffset: -200; } }
+    /* Every animation plays once (4.5 s) and ends on the static frame. */
+    @keyframes lh-settle { from { transform: rotate(-40deg); } to { transform: rotate(0deg); } }
+    @keyframes lh-settle-rev { from { transform: rotate(30deg); } to { transform: rotate(0deg); } }
+    @keyframes lh-sweep { 0% { transform: translateX(-140px); opacity: 0; } 25% { opacity: 1; } 60% { opacity: 1; } 100% { transform: translateX(460px); opacity: 0; } }
+    @keyframes lh-breathe { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+    @media (prefers-reduced-motion: reduce) {
+      .lh-flow, .lh-orbit, .lh-orbit-rev, .lh-sheen, .lh-pulse { animation: none; }
+      .lh-sheen { opacity: 0; }
+      /* SMIL motion ignores CSS; hide the travelling light instead. */
+      .lh-traveller { display: none; }
+    }
+  </style>
+
+  <g clip-path="url(#lh-frame)">
+    <rect width="1200" height="400" fill="url(#lh-bg)"/>
+    <rect width="1200" height="400" fill="url(#lh-ember)"/>
+    <g mask="url(#lh-grid-mask)">
+      <rect width="1200" height="400" fill="url(#lh-grid-fine)"/>
+      <rect width="1200" height="400" fill="url(#lh-grid-major)"/>
+    </g>
+
+    <!-- Orbital mark -->
+    <g fill="none" stroke-linecap="round">
+      <circle cx="960" cy="200" r="132" stroke="#EDE3D4" stroke-opacity="0.08"/>
+      <g class="lh-orbit">
+        <ellipse cx="960" cy="200" rx="150" ry="58" stroke="#C9665A" stroke-opacity="0.45" transform="rotate(-24 960 200)"/>
+        <circle cx="1096" cy="140" r="4" fill="#E8823D" stroke="none"/>
+      </g>
+      <g class="lh-orbit-rev">
+        <ellipse cx="960" cy="200" rx="118" ry="118" stroke="#EDE3D4" stroke-opacity="0.14" stroke-dasharray="2 9"/>
+        <circle cx="960" cy="82" r="3" fill="#EDE3D4" fill-opacity="0.75" stroke="none"/>
+      </g>
+      <ellipse cx="960" cy="200" rx="92" ry="34" stroke="#7A2234" stroke-opacity="0.8" transform="rotate(32 960 200)"/>
+      <circle cx="960" cy="200" r="46" fill="url(#lh-glow)" stroke="none" class="lh-pulse"/>
+      <rect x="949" y="189" width="22" height="22" rx="3" fill="#0E0B10" stroke="#E8823D" stroke-opacity="0.9" transform="rotate(45 960 200)"/>
+      <path d="M960 160 V176 M960 224 V240 M920 200 H936 M984 200 H1000" stroke="#EDE3D4" stroke-opacity="0.35"/>
+    </g>
+
+    <!-- Technical path -->
+    <use href="#lh-route" fill="none" stroke="#3A1A24" stroke-width="3"/>
+    <use href="#lh-route" fill="none" stroke="#E8823D" stroke-opacity="0.75" stroke-width="1.5" class="lh-flow"/>
+    <g fill="#0E0B10" stroke="#E8823D" stroke-opacity="0.85" stroke-width="1.5">
+      <circle cx="196" cy="356" r="4"/>
+      <circle cx="596" cy="326" r="4"/>
+      <circle cx="812" cy="302" r="4"/>
+      <circle cx="884" cy="272" r="4"/>
+    </g>
+    <circle r="12" fill="url(#lh-glow)" filter="url(#lh-blur)" class="lh-traveller" opacity="0">
+      <animateMotion dur="4.5s" repeatCount="1" fill="freeze" rotate="auto"><mpath href="#lh-route"/></animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="4.5s" repeatCount="1" fill="freeze"/>
+    </circle>
+    <circle r="2.5" fill="#FFE7CF" class="lh-traveller" opacity="0">
+      <animateMotion dur="4.5s" repeatCount="1" fill="freeze"><mpath href="#lh-route"/></animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="4.5s" repeatCount="1" fill="freeze"/>
+    </circle>
+
+    <!-- Registration ticks -->
+    <g stroke="#EDE3D4" stroke-opacity="0.35" stroke-width="1">
+      <path d="M40 40 H58 M40 40 V58"/>
+      <path d="M1160 40 H1142 M1160 40 V58"/>
+      <path d="M40 360 H58 M40 360 V342"/>
+      <path d="M1160 360 H1142 M1160 360 V342"/>
+    </g>
+
+    <!-- Type -->
+    <text x="80" y="104" fill="#C9B9A6" font-family="'SF Mono', 'Cascadia Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" letter-spacing="3">PROFILE · INFRASTRUCTURE</text>
+    <text x="78" y="172" fill="#F3EBDD" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'DejaVu Serif', serif" font-size="62" font-weight="600" letter-spacing="0.5">Likhith Sai Padige</text>
+    <rect x="80" y="190" width="420" height="2.5" rx="1.25" fill="url(#lh-underline)"/>
+    <rect x="80" y="186" width="420" height="10" rx="5" fill="url(#lh-underline)" opacity="0.35" filter="url(#lh-blur)"/>
+    <rect x="80" y="190" width="120" height="2.5" rx="1.25" fill="url(#lh-sheen)" class="lh-sheen" opacity="0"/>
+    <text x="80" y="232" fill="#E8823D" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="4.5">LINUX &amp; CLOUD INFRASTRUCTURE ENGINEER</text>
+    <text x="80" y="270" fill="#C9B9A6" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18">Reliable Linux systems · Cloud operations · Infrastructure automation</text>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="399" rx="18" fill="none" stroke="#3A1A24"/>
+</svg>
